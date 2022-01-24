@@ -3,7 +3,7 @@ RUN npm config set registry https://registry.npm.taobao.org
 WORKDIR /home/www/express
 COPY package*.json ./
 RUN npm install
-COPY . .
+COPY .. .
 RUN npm run build
 
 
